@@ -1,0 +1,174 @@
+#btn-flc {
+	position: fixed;
+	bottom: 50px;
+/* 	right: 40px; */
+	z-index: 9999;
+}
+
+#btn-flc button {
+    border: 0px none;
+    background-color: transparent;
+    
+    display:inline;
+    position:relative;
+}
+
+#btn-flc button img {
+    filter: drop-shadow(0 0 5px #9b9b9b);
+    
+}
+
+/* Tooltip styling */
+#btn-flc button[data-tooltip]:after {
+    border-top: 8px solid #222;
+    border-top: 8px solid hsla(0,0%,0%,.85);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    content: "";
+    display: none;
+    height: 0;
+    width: 0;
+    left: 25%;
+    position: absolute;
+}
+
+#btn-flc button[data-tooltip]:before {
+    background: #222;
+    background: hsla(0,0%,0%,.85);
+    color: #f6f6f6;
+    content: attr(data-tooltip);
+    display: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 32px;
+/*     right: 0; */
+/*     left: 0; */
+    line-height: 32px;
+    padding: 0 15px;
+    position: absolute;
+    text-shadow: 0 1px 1px hsla(0,0%,0%,1);
+    white-space: nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+#btn-flc button[data-tooltip]:hover:after {
+    display: block;
+    top: -9px;
+}
+#btn-flc button[data-tooltip]:hover:before {
+    display: block;
+    top: -41px;
+}
+#btn-flc button[data-tooltip]:active:after {
+    top: -10px;
+}
+#btn-flc button[data-tooltip]:active:before {
+    top: -42px;
+}
+
+.flc-close button {
+	border: 0px none transparent;
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+	background-color: white;
+	
+	position: absolute;
+    top: -10px;
+    z-index: 9999;
+    right: -10px;
+    padding: 0;
+	
+	-webkit-box-shadow: -4px 3px 10px 0 rgba(0,0,0,0.3);
+	box-shadow: -4px 3px 10px 0 rgba(0,0,0,0.3);
+}
+
+.flc-close button:hover {
+	cursor: pointer;
+	color: #757371;
+}
+
+.popup-box {
+	background-color: #ffffff;
+	display: none;
+	position: fixed;
+/* 	right: 20px;     */
+	bottom: 0px;
+	z-index: 9999;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+}
+.round.hollow {
+    margin: 40px 0 0;
+}
+.round.hollow button {
+/* 	background-color: transparent; */
+/*     border: 2px solid #3fbd98; */
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+/*     color: #3fbd98; */
+/*     font-size: 23px; */
+/*     padding: 10px 21px; */
+    text-decoration: none;
+}
+.round.hollow button:hover {
+    border: 2px solid #000;
+    border-radius: 35px;
+    color: red;
+    color: #000;
+/*     font-size: 23px; */
+/*     padding: 10px 21px; */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.round.hollow button span {
+/* 	font-size: 30px; */
+    
+}
+
+/*------------------------------------*\
+	Button Size
+\*------------------------------------*/
+
+.round.hollow button.flc_tiny{
+	font-size: 1em;
+    padding: 5px 12px;
+}
+
+.round.hollow button.flc_tiny span {
+    font-size: 1.2em;
+    vertical-align: baseline;
+}
+
+.round.hollow button.flc_medium{
+	font-size: 1.2em;
+    padding: 8px 14px;
+}
+
+.round.hollow button.flc_medium span {
+    font-size: 1.4em;
+    vertical-align: sub;
+}
+
+.round.hollow button.flc_large{
+	font-size: 1.4em;
+    padding: 10px 21px;
+}
+
+.round.hollow button.flc_large span {
+    font-size: 1.6em;
+    vertical-align: sub;
+}
+
+
+.popup-box-on {
+    display: block !important;
+}
+
+.flc-close button i {
+	font-size: 20px;
+}
